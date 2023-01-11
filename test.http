@@ -1,0 +1,18 @@
+GET http://localhost:3500/api/estudiantes
+
+###
+POST http://localhost:3500/api/estudiantes 
+Content-Type: application/json;
+
+{
+    "Nombre" : "Pepita Camacho",
+    "Correo" : "pepitaC@gmail.com"
+}
+
+###
+
+PUT http://localhost:3500/api/estudiantes/456 
+
+###
+
+DELETE http://localhost:3500/api/estudiantes/456 
