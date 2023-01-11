@@ -1,6 +1,6 @@
-const express = require("express");
+const { Router } = require("express");
 const ctrEst = require("../controllers/estudiantes.controller");
-const routerEstudiantes = express();
+const routerEstudiantes = Router();
 
 /*el que proposava el tio del vídeo era
 const { Router } = require("express");

@@ -13,11 +13,11 @@ app.use(morgan("dev")); //es pot canviar dev per altres opcions segons com vulgu
 
 
 //llamada de rutas
-//app.use(express.static("public"));
+app.use(express.static("../public"));
 //Ho hauré d'esborrar i posar la línia anterior
-app.get('/', (req, res) => {
+/*app.get('/', (req, res) => {
     res.send('Hello World!');
-})
+})*/
 
 app.use("/api/estudiantes", routerEstudiantes);
 
