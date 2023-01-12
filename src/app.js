@@ -1,7 +1,11 @@
 const express = require('express');
 const morgan = require("morgan"); //donarà informació a la consola cada cop que es faci request
+const conexionDB = require("./db.conexion");
 const routerEstudiantes = require("./routes/estudiantes.routes");
 const app = express();
+
+//conexión a la DB
+conexionDB();
 
 //settings
 app.set("name", "API-NodeJs");

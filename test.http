@@ -2,17 +2,27 @@ GET http://localhost:3500/api/estudiantes
 
 ###
 POST http://localhost:3500/api/estudiantes 
-Content-Type: application/json;
+Content-Type: application/json
 
 {
-    "Nombre" : "Pepita Camacho",
-    "Correo" : "pepitaC@gmail.com"
+    "nombre" : "Noob",
+    "correo" : "noob@gmail.com",
+    "materias" : {
+        "nombre" : "Matemàtiques",
+        "nota" : 10,
+        "comentario" : "Muy brillante"
+    }
 }
 
 ###
 
-PUT http://localhost:3500/api/estudiantes/456 
+PUT http://localhost:3500/api/estudiantes/63c0023d54dfeb10d7cbb72f
+Content-Type: application/json
+
+{
+    "nombre" : "Novíssima Senyora"
+}
 
 ###
 
-DELETE http://localhost:3500/api/estudiantes/456 
+DELETE http://localhost:3500/api/estudiantes/63c0000d52a47229ca5fec34
