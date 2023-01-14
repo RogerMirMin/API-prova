@@ -1,0 +1,53 @@
+//ESTUDIANTS --falta el token a GET
+GET http://localhost:3500/api/bromes
+###
+POST http://localhost:3500/api/bromes
+Content-Type: application/json
+
+{
+    "text" : "'Hola, aquí és on renten la roba? No? Bruts!'",
+    "número" : 11
+}
+
+###
+
+PUT http://localhost:3500/api/estudiantes/63c2cb21636f6148f121d6ae
+Content-Type: application/json
+
+{
+    "nombre" : "Anna la Marrana"
+}
+
+###
+
+DELETE http://localhost:3500/api/estudiantes/63c03ff58dc7359b2b06734a
+
+###
+
+//MATÈRIES
+
+GET http://localhost:3500/api/materias/63c02f21c0f59e86819dd768
+
+###
+
+POST http://localhost:3500/api/materias/63c00ca7b7a567f1d466e0bb
+Content-Type: application/json
+
+{
+    "nombre" : "Castellà",
+    "nota" : 9.9,
+    "comentario" : "Brooo"
+}
+
+###
+PUT http://localhost:3500/api/materias/63c00ca7b7a567f1d466e0bb/63c014183081587ba6b396fd
+Content-Type: application/json
+
+{
+    "nota" : 2.3,
+    "comentario" : "El professor es va equivocar, neeeb."
+}
+
+###
+
+DELETE http://localhost:3500/api/materias/63c00ca7b7a567f1d466e0bb/63c02f87c0f59e86819dd775
