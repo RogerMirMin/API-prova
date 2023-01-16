@@ -1,5 +1,6 @@
 [build]
 functions="./src/index.js"
+publish="public"
 
 [[redirects]]
   from = "/cors"
