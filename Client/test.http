@@ -5,8 +5,8 @@ POST http://localhost:3500/api/bromes
 Content-Type: application/json
 
 {
-    "text" : "'Hola, aquí és on renten la roba? No? Bruts!'",
-    "número" : 11
+    "text" : "'Va un cargol i derrapa'",
+    "número" : 12
 }
 
 ###

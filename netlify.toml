@@ -1,0 +1,13 @@
+[build]
+functions="./src/index.js"
+
+[[redirects]]
+  from = "/cors"
+  to = "https://lambent-dango-8f1762.netlify.app"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
